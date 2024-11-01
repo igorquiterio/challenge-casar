@@ -1,3 +1,4 @@
+import { Header } from '@/components/Header'
 import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
@@ -16,7 +17,7 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
-      <body className="antialiased">
+      <body className="antialiased bg-white">
         <Main />
         <NextScript />
       </body>

@@ -7,15 +7,31 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+body {
+  @apply text-greyNeutral;
+  background: var(--background);
+  font-family: Roboto, sans-serif;
+}
+
+
+@layer base {
+  h1 {
+    @apply text-h1 font-semibold;
+  }
+  h2 {
+    @apply text-h2 font-semibold;
+  }
+  h3 {
+    @apply text-h3 font-medium;
+  }
+  h4 {
+    @apply text-h4 font-semibold;
+  }
+  h5 {
+    @apply text-h5 font-normal;
+  }
+  p {
+    @apply text-md font-normal;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
